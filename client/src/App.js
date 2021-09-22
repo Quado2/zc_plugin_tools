@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="flex flex-grow min-h-screen">
       <div className="flex-grow bg-gray-200">
+       
         {/* <BrowserRouter>
           <Switch>
             <Route exact path="/" component={ToolsView} />
@@ -30,29 +31,27 @@ function App() {
             <Route path="/googledrive" component={GoogleDrive} />
           </Switch>
         </BrowserRouter> */}
-        <BrowserRouter>
+
+        {/* <BrowserRouter>
           <Switch>
-            {/* <Layout> */}
+ 
             <HomeLayoutRoutes exact path="/" component={ToolsView} />
             <ToolsDirectoryLayout
               exact
               path="/tools"
               component={ToolsDirectory}
             />
-            {/* <ToolsHeader /> */}
+    
             <AppLayoutRoutes path="/gmail" component={Gmail} />
-            <AppLayoutRoutes
-              path="/figma/:subroute"
-              component={FigmaSubRoutes}
-            />
+            <AppLayoutRoutes path="/figma/:subroute" component={FigmaSubRoutes}/>
             <AppLayoutRoutes path="/figma" component={Figma} />
             <AppLayoutRoutes path="/github" component={Github} />
             <AppLayoutRoutes path="/giphy" component={Giphy} />
             <AppLayoutRoutes path="/googledrive" component={GoogleDrive} />
-            {/* </ToolsHeader> */}
-            {/* </Layout> */}
+            
           </Switch>
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <h1>Hello boy</h1>
       </div>
     </div>
   );
